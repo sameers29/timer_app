@@ -1,0 +1,116 @@
+/* You can add global styles to this file, and also import other style files */
+// .bs-datepicker .bs-media-container,
+// .bs-datepicker-body,
+// .bs-media-container,
+// bs-days-calendar-view {
+//   display: none;
+// }
+// .ngb-tp-input {
+//   text-align: center !important;
+//   //   font-size: 30px !important;
+//   font-size: 25px !important;
+//   font-weight: 500 !important;
+// }
+
+.form-control {
+  font-size: 1.5rem !important;
+  font-weight: 600 !important;
+  padding: 0.313rem !important;
+}
+
+.ngb-tp-input {
+  font-size: 1.5rem;
+  font-weight: 600 !important;
+}
+
+.ngb-tp-meridian .btn-outline-primary {
+  padding: 12px !important;
+}
+
+.fontsize {
+  font-size: 45px;
+}
+.nextrace {
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-left: 5px;
+}
+
+@media screen and (min-width: 305px) and (max-width: 375px) {
+  .form-control {
+    font-size: 1.25rem !important;
+    font-weight: 600 !important;
+  }
+  .ngb-tp-input {
+    font-size: 1.25rem !important;
+    font-weight: 600 !important;
+  }
+
+  .smallDevice {
+    padding: 4px !important;
+  }
+
+  .ngb-tp-meridian .btn-outline-primary {
+    padding: 6px !important;
+    font-size: 1.25rem;
+  }
+}
+
+@media screen and (min-width: 375px) and (max-width: 425px) {
+  .form-control {
+    font-size: 1.375rem !important;
+    font-weight: 600 !important;
+  }
+  .ngb-tp-input {
+    font-size: 1.375rem !important;
+    font-weight: 600 !important;
+  }
+
+  .smallDevice {
+    padding: 6px !important;
+  }
+
+  .ngb-tp-meridian .btn-outline-primary {
+    padding: 6px !important;
+    font-size: 1.375rem;
+  }
+}
+
+@media screen and (min-width: 425px) and (max-width: 768px) {
+  .form-control {
+    font-size: 1.6rem !important;
+    font-weight: 600 !important;
+  }
+  .ngb-tp-input {
+    font-size: 1.6rem !important;
+    font-weight: 600 !important;
+  }
+
+  .smallDevice {
+    padding: 1rem !important;
+  }
+
+  .ngb-tp-meridian .btn-outline-primary {
+    padding: 6px !important;
+    font-size: 1.6rem;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .form-control {
+    font-size: 1.3rem !important;
+    font-weight: 600 !important;
+  }
+  .ngb-tp-input {
+    font-size: 1.3rem !important;
+    font-weight: 600 !important;
+  }
+
+  .smallDevice {
+    padding: 1.3rem !important;
+  }
+
+  .ngb-tp-meridian .btn-outline-primary {
+    padding: 6px !important;
+    font-size: 1.3rem;
+  }
+}

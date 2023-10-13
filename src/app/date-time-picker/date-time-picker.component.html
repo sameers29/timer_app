@@ -1,0 +1,87 @@
+<div class="header p-4">
+  <div>
+    <label class="mb-0 nextrace" for="selectedDateTime">Next Race:</label>
+  </div>
+  <div class="row fs-3 justify-content-left d-flex">
+    <div class="col-md-6">
+      <div class="row">
+        <div class="d-flex align-items-center">
+          <div class="col-md-6 w-50 smallDevice">
+            <input
+              type="text"
+              placeholder="selectedDateTime"
+              class="form-control"
+              bsDatepicker
+              [bsConfig]="{
+                withTimepicker: false,
+                dateInputFormat: 'MMM DD, YYYY',
+                keepDatepickerOpened: true,
+                minMode: 'day'
+              }"
+              [(ngModel)]="selectedDateTime"
+              (ngModelChange)="onDateChange()"
+            />
+          </div>
+
+          <div class="col-md-6 w-50 smallDevice">
+            <ngb-timepicker
+              [(ngModel)]="time"
+              [meridian]="meridian"
+              (ngModelChange)="onTimeChange()"
+              class="text-center"
+              [minuteStep]="minuteStep"
+            ></ngb-timepicker>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-6 text-center">
+      <div class="badge-wrape">
+        <div class="badge badge-dark p-3">
+          <p class="fs-2">Starts in:</p>
+          <span class="fontsize">{{ timeDifference }} </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- <div class="row fs-3 p-3 justify-content-left">
+  <div class="col-md-4 form-group">
+    <label class="mb-0" for="selectedDateTime">Next Race:</label>
+    <input
+      type="text"
+      placeholder="selectedDateTime"
+      class="form-control"
+      bsDatepicker
+      [bsConfig]="{
+        withTimepicker: false,
+        dateInputFormat: 'MMM, DD YYYY',
+        keepDatepickerOpened: true,
+        minMode: 'day'
+      }"
+      [(ngModel)]="selectedDateTime"
+      (ngModelChange)="onDateChange()"
+    />
+  </div>
+  <div class="col-md-4 form-group">
+    <ngb-timepicker
+      [(ngModel)]="time"
+      [meridian]="meridian"
+      (ngModelChange)="onTimeChange()"
+      class="text-center"
+      [minuteStep]="minuteStep"
+    ></ngb-timepicker>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-6 fs-3 text-center">
+    <div class="badge-wrape">
+      <div class="badge badge-dark p-3 mb-3">
+        <p class="fs-1">Starts in:</p>
+        <span class="fontsize">{{ timeDifference }} </span>
+      </div>
+    </div>
+  </div>
+</div> -->
